@@ -1,0 +1,1 @@
+web: knex --knexfile knexfile.ts migrate:latest && knex --knexfile knexfile.ts seed:run && ts-node ./src/server.ts
