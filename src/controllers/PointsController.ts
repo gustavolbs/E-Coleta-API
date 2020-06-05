@@ -20,7 +20,7 @@ export default class PointsController {
     const serializedPoints = points.map((point) => {
       return {
         ...point,
-        image_url: `http://192.168.25.8:3333/uploads/${point.image}`,
+        image_url: `https://e-coleta-api.herokuapp.com/uploads/${point.image}`,
       };
     });
 
