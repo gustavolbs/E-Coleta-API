@@ -74,7 +74,7 @@ var PointsController = /** @class */ (function () {
                     case 1:
                         points = _b.sent();
                         serializedPoints = points.map(function (point) {
-                            return __assign(__assign({}, point), { image_url: "http://192.168.25.8:3333/uploads/" + point.image });
+                            return __assign(__assign({}, point), { image_url: "https://e-coleta-api.herokuapp.com/uploads/" + point.image });
                         });
                         return [2 /*return*/, res.json(serializedPoints)];
                 }
