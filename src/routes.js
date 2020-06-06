@@ -18,7 +18,7 @@ routes.post("/points", upload.single("image"), celebrate_1.celebrate({
     body: celebrate_1.Joi.object().keys({
         name: celebrate_1.Joi.string().required(),
         email: celebrate_1.Joi.string().email().required(),
-        whatsapp: celebrate_1.Joi.number().required(),
+        whatsapp: celebrate_1.Joi.string().required(),
         latitude: celebrate_1.Joi.number().required(),
         longitude: celebrate_1.Joi.number().required(),
         city: celebrate_1.Joi.string().required(),
